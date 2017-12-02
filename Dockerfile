@@ -17,5 +17,5 @@ RUN chown mysql:mysql /etc/mysql/my.cnf
 # Listen on
 EXPOSE 3306
 
-# Initialize mysql
+# start mysqld server
 ENTRYPOINT ["mysqld_safe", "--user=mysql"]
